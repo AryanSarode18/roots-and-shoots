@@ -438,13 +438,13 @@ body {
 
 .features-item {
   display: flex;
-  align-items: flex-start;
+  align-items: end;
   gap: 25px;
 }
 
 .features-item .item-icon {
   color: var(--pistachio);
-  font-size: 5.5rem;
+  font-size: 6rem;
   margin-block-start: 10px;
 } 
 
@@ -1181,13 +1181,6 @@ body {
     align-items: center;
     gap: 50px;
   }
-
-  .search-btn {
-    color: var(--white);
-    font-size: 2.6rem;
-  }
-
-  .search-btn ion-icon { --ionicon-stroke-width: 50px; }
 
 
 

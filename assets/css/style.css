@@ -262,7 +262,6 @@ body {
   #HEADER
 \*-----------------------------------*/
 
-.lang-switch,
 .header-action { display: none; }
 
 .header {
@@ -407,6 +406,8 @@ body {
   font-size: var(--fs-2);
   margin-block: 30px;
   line-height: 1.2;
+  display: flex;
+  gap: 2rem;
 }
 
 .hero-text {
@@ -1362,19 +1363,6 @@ body {
   .navbar-link > ion-icon { display: none; }
 
   .header { padding-block: 25px; }
-
-  .lang-switch {
-    position: relative;
-    display: block;
-    background-color: transparent;
-    border: none;
-    color: var(--white);
-    font: inherit;
-    font-size: var(--fs-8);
-    font-weight: var(--fw-600);
-  }
-
-  .lang-switch option { color: var(--eerie-black-1); }
 
   .navbar {
     all: unset;

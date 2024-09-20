@@ -251,7 +251,7 @@ body {
   transition: var(--transition-2);
 }
 
-.btn:is(:hover, :focus)::after {
+.btn:is(:hover)::after {
   transform: translate(0, 0);
 }
 
@@ -802,9 +802,18 @@ body {
   padding: var(--section-padding) 15px;
 }
 
-.testi .section-title {
+.quote {
+  font-size: 15rem;
+  height: 15rem;
+}
+
+.quotetext {
+  font-size: 4rem;
+}
+
+.testi .testi-card .testi-text {
   color: var(--white);
-  margin-block: 10px 40px;
+  font-family: sans-serif;
 }
 
 .testi-card {
@@ -836,35 +845,6 @@ body {
   background-color: var(--light-gray);
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #PARTNER
-\*-----------------------------------*/
-
-.partner {
-  background-color: var(--baby-powder);
-}
-
-.partner .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-}
-
-.partner-logo .color,
-.partner-logo:is(:hover, :focus) .gray {
-  display: none;
-}
-
-.partner-logo:is(:hover, :focus) .color,
-.partner-logo .gray {
-  display: block;
-}
 
 
 
@@ -1054,6 +1034,7 @@ body {
 
 .copyright-link {
   display: inline-block;
+  text-decoration: none;
 }
 
 
@@ -1592,22 +1573,14 @@ body {
 
 
 
-  /**
-   * PARTNER
-   */
 
-  .partner .container {
-    justify-content: space-evenly;
-  }
+  /* Contact */
 
-
-
-  /**
-   * INSTA POST
-   */
-
-  .insta-post-item {
-    min-width: 20%;
+  .contact-heading {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
   }
 
 

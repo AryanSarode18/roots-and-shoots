@@ -1,5 +1,5 @@
 /*
-  Copyright 2024 Aryan Sarode
+  Copyright 2024 Arnav Nagpurkar
 */
 
 
@@ -681,8 +681,10 @@ body {
   margin-block-start: 15px;
 }
 
-.btn-link span {
+.btn-link:hover {
+  color: hsl(0, 1%, 50%);
   text-decoration: underline;
+  transition: all 0.2s ease-in;
 }
 
 
@@ -854,9 +856,6 @@ body {
   #EVENT
 \*-----------------------------------*/
 
-.event {
-  padding-block-end: 120px;
-}
 
 .event .section-subtitle {
   justify-content: center;
@@ -1582,7 +1581,6 @@ body {
     margin-bottom: 30px;
     color: white;
   }
-
 
 
   /**

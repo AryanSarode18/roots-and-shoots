@@ -1,5 +1,5 @@
 /*
-  Copyright 2024 Aryan Sarode
+  Copyright 2024 Arnav Nagpurkar
 */
 
 
@@ -686,6 +686,7 @@ body {
   margin: 15px auto;
   border-radius: 15px;
   gap: 5px;
+  cursor: pointer;
 }
 
 .btn-link:hover {

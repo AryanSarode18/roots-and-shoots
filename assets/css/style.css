@@ -1,13 +1,12 @@
-
-
-
+/*
+  Copyright 2024 Aryan Sarode
+*/
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
 :root {
-
   /**
    * colors
    */
@@ -38,9 +37,9 @@
    * typography
    */
 
-  --ff-oswald: 'Oswald', sans-serif;
-  --ff-inter: 'Inter', sans-serif;
-  --ff-roboto: 'Roboto', sans-serif;
+  --ff-oswald: "Oswald", sans-serif;
+  --ff-inter: "Inter", sans-serif;
+  --ff-roboto: "Roboto", sans-serif;
 
   --fs-1: 13rem;
   --fs-2: 4rem;
@@ -78,12 +77,7 @@
   --transition-2: 0.25s ease;
   --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
   --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
-
 }
-
-
-
-
 
 /*-----------------------------------*\
   #RESET
@@ -173,10 +167,6 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: var(--pistachio);
 }
-
-
-
-
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -287,9 +277,6 @@ body {
   object-fit: cover;
 }
 
-
-
-
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -330,7 +317,7 @@ body {
 
 .header .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 50px;
 }
@@ -380,7 +367,7 @@ body {
   --ionicon-stroke-width: 60px;
 }
 
-.navbar>.logo {
+.navbar > .logo {
   font-size: 4rem;
   width: max-content;
   margin-inline: auto;
@@ -431,10 +418,6 @@ body {
   background-color: var(--pistachio);
 }
 
-
-
-
-
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
@@ -460,6 +443,7 @@ body {
   line-height: 1.2;
   display: flex;
   gap: 2rem;
+  color: var(--white);
 }
 
 .hero-text {
@@ -468,11 +452,8 @@ body {
   letter-spacing: -1px;
   max-width: 50ch;
   margin-block-end: 30px;
+  color: var(--white);
 }
-
-
-
-
 
 /*-----------------------------------*\
   #FEATURES
@@ -513,10 +494,6 @@ body {
   color: var(--white_50);
   font-size: var(--fs-9);
 }
-
-
-
-
 
 /*-----------------------------------*\
   #ABOUT
@@ -607,11 +584,6 @@ body {
   font-weight: var(--fw-500);
 }
 
-
-
-
-
-
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
@@ -641,8 +613,6 @@ body {
   outline: 3px solid transparent;
   box-shadow: var(--card-shadow);
   transition: var(--transition-2);
-  min-height: 41rem;
-  max-height: 41rem;
 }
 
 .service-card:is(:hover, :focus-within) {
@@ -689,10 +659,6 @@ body {
   background-color: hsl(86, 68%, 42%);
   transition: all 0.2s ease-in;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #DONATE
@@ -791,16 +757,12 @@ body {
   color: var(--medium-turquoise);
 }
 
-
-
-
-
 /*-----------------------------------*\
   #TESTIMONIALS
 \*-----------------------------------*/
 
 .testi {
-    background-color: hsl(0deg 0% 12.94%);
+  background-color: hsl(0deg 0% 12.94%);
 }
 
 .testi-content {
@@ -850,15 +812,9 @@ body {
   background-color: var(--light-gray);
 }
 
-
-
-
-
-
 /*-----------------------------------*\
   #EVENT
 \*-----------------------------------*/
-
 
 .event .section-subtitle {
   justify-content: center;
@@ -928,10 +884,6 @@ body {
   margin-inline: auto;
 }
 
-
-
-
-
 /*-----------------------------------*\
   #INSTA POST
 \*-----------------------------------*/
@@ -942,16 +894,16 @@ body {
   overflow: hidden;
 }
 
-.insta-post-link>img {
+.insta-post-link > img {
   transition: var(--transition-2);
 }
 
-.insta-post-link:is(:hover, :focus)>img {
+.insta-post-link:is(:hover, :focus) > img {
   transform: scale(1.1);
   opacity: 0.5;
 }
 
-.insta-post-link>ion-icon {
+.insta-post-link > ion-icon {
   color: var(--white);
   font-size: 5rem;
   position: absolute;
@@ -962,7 +914,7 @@ body {
   transition: var(--transition-2);
 }
 
-.insta-post-link:is(:hover, :focus)>ion-icon {
+.insta-post-link:is(:hover, :focus) > ion-icon {
   opacity: 1;
 }
 
@@ -980,10 +932,6 @@ body {
   min-width: 90%;
   scroll-snap-align: center;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #FOOTER
@@ -1039,10 +987,6 @@ body {
   text-decoration: none;
 }
 
-
-
-
-
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -1052,22 +996,17 @@ body {
  */
 
 @media (min-width: 450px) {
-
   /**
    * CUSTOM PROPERTY
    */
 
   :root {
-
     /**
      * typography
      */
 
     --fs-3: 4rem;
-
   }
-
-
 
   /**
    * CTA
@@ -1076,34 +1015,24 @@ body {
   .cta {
     --fs-4: 4.1rem;
   }
-
 }
-
-
-
-
 
 /**
  * responsive for larger than 580px screen
  */
 
 @media (min-width: 580px) {
-
   /**
    * CUSTOM PROPERTY
    */
 
   :root {
-
     /**
      * typography
      */
 
     --fs-2: 5.5rem;
-
   }
-
-
 
   /**
    * DONATE
@@ -1128,8 +1057,6 @@ body {
     --fs-5: 2.4rem;
   }
 
-
-
   /**
    * EVENT
    */
@@ -1149,8 +1076,6 @@ body {
     line-height: 1.4;
   }
 
-
-
   /**
    * INSTA POST
    */
@@ -1158,19 +1083,23 @@ body {
   .insta-post-item {
     min-width: 45%;
   }
-
 }
 
+@media (max-width: 768px) {
+  .service-list {
+    grid-template-columns: 1fr; /* Stack items in one column for smaller screens */
+  }
 
-
-
+  .service-card {
+    min-height: auto; /* Allow card height to adapt as per content */
+  }
+}
 
 /**
  * responsive for larger than 768px screen
  */
 
 @media (min-width: 768px) {
-
   /**
    * FEATURES, SERVICE
    */
@@ -1179,8 +1108,6 @@ body {
   .service-list {
     grid-template-columns: 1fr 1fr;
   }
-
-
 
   /**
    * ABOUT
@@ -1204,8 +1131,6 @@ body {
     margin-block-end: 30px;
   }
 
-
-
   /**
    * TESTIMONIALS
    */
@@ -1220,8 +1145,6 @@ body {
     margin-block-start: 0;
   }
 
-
-
   /**
    * INSTA POST
    */
@@ -1229,8 +1152,6 @@ body {
   .insta-post-item {
     min-width: 32%;
   }
-
-
 
   /**
    * FOOTER
@@ -1252,34 +1173,31 @@ body {
   .footer-list {
     margin-block-end: 0;
   }
-
 }
 
 
-
-
+@media (max-width: 1336px) {
+  .service-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 /**
  * responsive for larger than 992px screen
  */
 
 @media (min-width: 992px) {
-
   /**
    * CUSTOM PROPERTY
    */
 
   :root {
-
     /**
      * typography
      */
 
     --fs-2: 7.5rem;
-
   }
-
-
 
   /**
    * HEADER
@@ -1295,8 +1213,6 @@ body {
     gap: 50px;
   }
 
-
-
   /**
    * HERO
    */
@@ -1309,8 +1225,6 @@ body {
     height: 100vh;
   }
 
-
-
   /**
    * FEATURES
    */
@@ -1322,8 +1236,6 @@ body {
   .features-list {
     grid-template-columns: repeat(4, 1fr);
   }
-
-
 
   /**
    * ABOUT
@@ -1357,8 +1269,6 @@ body {
     margin-block-end: 0;
   }
 
-
-
   /**
    * CTA
    */
@@ -1377,8 +1287,6 @@ body {
     --fs-4: 5rem;
   }
 
-
-
   /**
    * SERVICE
    */
@@ -1386,8 +1294,6 @@ body {
   .service-list {
     grid-template-columns: repeat(4, 1fr);
   }
-
-
 
   /**
    * DONATE
@@ -1397,8 +1303,6 @@ body {
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
   }
-
-
 
   /**
    * TESTIMONIALS
@@ -1412,8 +1316,6 @@ body {
   .testi-content {
     padding-inline: 30px 50px;
   }
-
-
 
   /**
    * EVENT
@@ -1430,8 +1332,6 @@ body {
     margin-block-end: 0;
   }
 
-
-
   /**
    * INSTA POST
    */
@@ -1439,34 +1339,24 @@ body {
   .insta-post-item {
     min-width: 24%;
   }
-
 }
-
-
-
-
 
 /**
  * responsive for larger than 1200px screen
  */
 
 @media (min-width: 1200px) {
-
   /**
    * CUSTOM PROPERTY
    */
 
   :root {
-
     /**
      * typography
      */
 
     --fs-3: 4.4rem;
-
   }
-
-
 
   /**
    * REUSED STYLE
@@ -1483,16 +1373,14 @@ body {
     line-height: 1.2;
   }
 
-
-
   /**
    * HEADER
    */
 
   .nav-open-btn,
   .nav-close-btn,
-  .navbar>.logo,
-  .navbar-link>ion-icon {
+  .navbar > .logo,
+  .navbar-link > ion-icon {
     display: none;
   }
 
@@ -1526,8 +1414,6 @@ body {
     color: var(--white-60);
   }
 
-
-
   /**
    * HERO
    */
@@ -1536,8 +1422,6 @@ body {
     padding-block: 200px 325px;
     background-position: center;
   }
-
-
 
   /**
    * FEATURES
@@ -1549,8 +1433,6 @@ body {
     background-color: transparent;
   }
 
-
-
   /**
    * ABOUT
    */
@@ -1558,8 +1440,6 @@ body {
   .deco-img {
     left: -35px;
   }
-
-
 
   /**
    * DONATE
@@ -1573,9 +1453,6 @@ body {
     width: 65%;
   }
 
-
-
-
   /* Contact */
 
   .contact-heading {
@@ -1585,7 +1462,6 @@ body {
     color: white;
   }
 
-
   /**
    * FOOTER
    */
@@ -1594,13 +1470,7 @@ body {
     margin-inline: 30px;
     width: auto;
   }
-
 }
-
-
-
-
-
 
 /* The Modal (background) */
 .modal {
@@ -1612,8 +1482,9 @@ body {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  border-radius: 5rem;
 }
 
 /* Modal Content/Box */
@@ -1638,4 +1509,69 @@ body {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+  backdrop-filter: blur(5px); /* Blur background */
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fff; /* White background */
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888; /* Gray border */
+  border-radius: 8px; /* Rounded corners */
+  width: 80%; /* Could be more or less depending on screen size */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  animation: fadeIn 0.5s; /* Fade-in effect */
+}
+
+/* Close button */
+.close {
+  color: #aaa; /* Gray color */
+  float: right; /* Align to the right */
+  font-size: 28px; /* Font size */
+  font-weight: bold; /* Bold font */
+}
+
+.close:hover,
+.close:focus {
+  color: black; /* Black color on hover */
+  text-decoration: none; /* No underline */
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Heading styles */
+h2 {
+  color: #333; /* Dark gray */
+}
+
+h3 {
+  color: #5a5a5a; /* Medium gray */
+  margin-top: 20px; /* Space above */
+}
+
+/* Paragraph styles */
+p {
+  color: #666; /* Lighter gray */
+  line-height: 1.6; /* Better readability */
+  margin-bottom: 15px; /* Space below paragraphs */
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

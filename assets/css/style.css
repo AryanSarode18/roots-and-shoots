@@ -50,7 +50,7 @@
   --fs-7: 2rem;
   --fs-8: 1.8rem;
   --fs-9: 1.5rem;
-  --fs-10: 1.4rem;
+  --fs-10: 1.35rem;
 
   --fw-300: 300;
   --fw-500: 500;
@@ -317,7 +317,7 @@ body {
 
 .header .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 50px;
 }
@@ -443,7 +443,6 @@ body {
   line-height: 1.2;
   display: flex;
   gap: 2rem;
-  color: var(--white);
 }
 
 .hero-text {
@@ -452,7 +451,6 @@ body {
   letter-spacing: -1px;
   max-width: 50ch;
   margin-block-end: 30px;
-  color: var(--white);
 }
 
 /*-----------------------------------*\
@@ -613,6 +611,7 @@ body {
   outline: 3px solid transparent;
   box-shadow: var(--card-shadow);
   transition: var(--transition-2);
+  min-height: auto;
 }
 
 .service-card:is(:hover, :focus-within) {
@@ -1085,16 +1084,6 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  .service-list {
-    grid-template-columns: 1fr; /* Stack items in one column for smaller screens */
-  }
-
-  .service-card {
-    min-height: auto; /* Allow card height to adapt as per content */
-  }
-}
-
 /**
  * responsive for larger than 768px screen
  */
@@ -1172,13 +1161,6 @@ body {
 
   .footer-list {
     margin-block-end: 0;
-  }
-}
-
-
-@media (max-width: 1336px) {
-  .service-list {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1288,14 +1270,6 @@ body {
   }
 
   /**
-   * SERVICE
-   */
-
-  .service-list {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  /**
    * DONATE
    */
 
@@ -1338,6 +1312,64 @@ body {
 
   .insta-post-item {
     min-width: 24%;
+  }
+}
+
+/**
+ * responsive for smaller than 532px screen
+ */
+
+@media (max-width: 532px) {
+  .service-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/**
+ * responsive for smaller than 600px screen
+ */
+
+@media (max-width: 600px) {
+  .service-card {
+    padding: 23px 40px;
+  }
+}
+
+/**
+ * responsive for larger than 450px screen
+ */
+
+@media (min-width: 450px) {
+  .service-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-list .service-card .card-title {
+    font-size: var(--fs-6);
+  }
+
+  .service-list .service-card .card-text {
+    font-size: var(--fs-10);
+  }
+}
+
+/**
+ * responsive for larger than 1225px screen
+ */
+
+@media (min-width: 1225px) {
+  /**
+   * SERVICE
+   */
+
+  .service-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .service-card {
+    min-height: 42rem !important;
+    max-height: 42rem !important;
   }
 }
 
@@ -1484,7 +1516,6 @@ body {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-  border-radius: 5rem;
 }
 
 /* Modal Content/Box */
@@ -1509,69 +1540,4 @@ body {
   color: black;
   text-decoration: none;
   cursor: pointer;
-}
-
-
-/* Modal styles */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1000; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
-  backdrop-filter: blur(5px); /* Blur background */
-}
-
-/* Modal content */
-.modal-content {
-  background-color: #fff; /* White background */
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888; /* Gray border */
-  border-radius: 8px; /* Rounded corners */
-  width: 80%; /* Could be more or less depending on screen size */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
-  animation: fadeIn 0.5s; /* Fade-in effect */
-}
-
-/* Close button */
-.close {
-  color: #aaa; /* Gray color */
-  float: right; /* Align to the right */
-  font-size: 28px; /* Font size */
-  font-weight: bold; /* Bold font */
-}
-
-.close:hover,
-.close:focus {
-  color: black; /* Black color on hover */
-  text-decoration: none; /* No underline */
-  cursor: pointer; /* Pointer cursor */
-}
-
-/* Heading styles */
-h2 {
-  color: #333; /* Dark gray */
-}
-
-h3 {
-  color: #5a5a5a; /* Medium gray */
-  margin-top: 20px; /* Space above */
-}
-
-/* Paragraph styles */
-p {
-  color: #666; /* Lighter gray */
-  line-height: 1.6; /* Better readability */
-  margin-bottom: 15px; /* Space below paragraphs */
-}
-
-/* Animation */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }

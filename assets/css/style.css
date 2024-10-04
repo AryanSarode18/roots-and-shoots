@@ -139,7 +139,7 @@ button {
 }
 
 ::selection {
-  background-color: var(--white_10);
+  background-color: rgba(0, 123, 255, 0.1);
 }
 
 html {
@@ -257,6 +257,7 @@ body {
 .btn-white {
   --btn-bg: var(--platinum);
   color: var(--black);
+  text-wrap: nowrap;
 }
 
 .section {
@@ -877,6 +878,7 @@ body {
 .event-card .card-text {
   font-family: var(--ff-inter);
   margin-block: 5px 30px;
+  max-width: 93%;
 }
 
 .event .btn-secondary {
@@ -1013,6 +1015,10 @@ body {
 
   .cta {
     --fs-4: 4.1rem;
+  }
+
+  .service-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1337,20 +1343,13 @@ body {
 }
 
 /**
- * responsive for larger than 450px screen
+ * responsive for larger than 1275px screen
  */
 
-@media (min-width: 450px) {
-  .service-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .service-list .service-card .card-title {
-    font-size: var(--fs-6);
-  }
-
-  .service-list .service-card .card-text {
-    font-size: var(--fs-10);
+@media (min-width: 1275px) {
+  .service-card {
+    min-height: 43rem !important;
+    max-height: 43rem !important;
   }
 }
 
@@ -1368,8 +1367,8 @@ body {
   }
 
   .service-card {
-    min-height: 42rem !important;
-    max-height: 42rem !important;
+    min-height: 46rem;
+    max-height: 46rem;
   }
 }
 
@@ -1504,21 +1503,10 @@ body {
   }
 }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
+/**
+   * MODAL
+**/
 
-/* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
@@ -1527,7 +1515,6 @@ body {
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
-/* The Close Button */
 .close {
   color: #aaa;
   float: right;
@@ -1540,4 +1527,73 @@ body {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+  backdrop-filter: blur(5px); /* Blur background */
+}
+
+.modal .content-div-modal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.modal .modal-content {
+  background-color: #fff; /* White background */
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888; /* Gray border */
+  border-radius: 8px; /* Rounded corners */
+  width: 80%; /* Could be more or less depending on screen size */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  animation: fadeIn 0.5s; /* Fade-in effect */
+}
+
+.modal .close {
+  color: #aaa; /* Gray color */
+  float: right; /* Align to the right */
+  font-size: 28px; /* Font size */
+  font-weight: bold; /* Bold font */
+}
+
+.modal .close:hover,
+.modal .close:focus {
+  color: black; /* Black color on hover */
+  text-decoration: none; /* No underline */
+  cursor: pointer; /* Pointer cursor */
+}
+
+.modal h2 {
+  color: #333; /* Dark gray */
+}
+
+.modal h3 {
+  color: #5a5a5a; /* Medium gray */
+  margin-top: 20px; /* Space above */
+}
+
+.modal p {
+  color: #666; /* Lighter gray */
+  line-height: 1.6; /* Better readability */
+  margin-bottom: 15px; /* Space below paragraphs */
+}
+
+/* Animation of Modal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

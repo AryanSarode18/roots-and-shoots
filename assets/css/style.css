@@ -1,6 +1,4 @@
-/*
-  Copyright 2024 Aryan Sarode
-*/
+
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
@@ -318,7 +316,6 @@ body {
 
 .header .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 50px;
 }
@@ -333,6 +330,8 @@ body {
 .nav-open-btn {
   color: var(--white);
   font-size: 3.8rem;
+  position: absolute;
+  right: 20px;
 }
 
 .navbar {
@@ -430,6 +429,11 @@ body {
   padding-block: 120px 60px;
   display: grid;
   align-items: center;
+  background-image: url("../images/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 100vh;
 }
 
 .hero .section-subtitle {
@@ -450,7 +454,6 @@ body {
   font-family: var(--ff-inter);
   font-size: var(--fs-8);
   letter-spacing: -1px;
-  max-width: 50ch;
   margin-block-end: 30px;
 }
 
@@ -486,6 +489,7 @@ body {
 
 .features-item .item-title {
   margin-block-end: 10px;
+  /* text-wrap: nowrap; */
 }
 
 .features-item .item-text {
@@ -631,6 +635,7 @@ body {
 }
 
 .service-card .card-title {
+  text-wrap: nowrap;
   letter-spacing: -1px;
   margin-block: 10px;
 }
@@ -979,6 +984,24 @@ body {
   background-color: hsla(0, 0%, 100%, 0.05);
 }
 
+.footer .left {
+  justify-content: center;
+  margin: 20px;
+}
+
+.footer .left .weblink {
+  display: flex;
+}
+
+.footer .left .img-web {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .left img {
+  display: flex;
+}
+
 .copyright {
   text-align: center;
 }
@@ -991,6 +1014,17 @@ body {
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+
+/**
+ * responsive for smaller than 385px screen
+ */
+
+@media (max-width: 385px) {
+  .hero-title {
+    display: block !important;
+  }
+}
+
 
 /**
  * responsive for larger than 450px screen
@@ -1091,6 +1125,20 @@ body {
 }
 
 /**
+ * responsive for smaller than 992px screen
+ */
+
+@media (max-width: 991px) {
+  .features {
+    display: none;
+  }
+
+  #about_img4 {
+    display: none;
+  }
+}
+
+/**
  * responsive for larger than 768px screen
  */
 
@@ -1099,7 +1147,6 @@ body {
    * FEATURES, SERVICE
    */
 
-  .features-list,
   .service-list {
     grid-template-columns: 1fr 1fr;
   }
@@ -1199,18 +1246,6 @@ body {
     display: flex;
     align-items: center;
     gap: 50px;
-  }
-
-  /**
-   * HERO
-   */
-
-  .hero {
-    background-image: url("../images/hero.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
-    height: 100vh;
   }
 
   /**
@@ -1484,7 +1519,7 @@ body {
     width: 65%;
   }
 
-  /* Contact */
+  /*  */
 
   .contact-heading {
     text-align: center;
@@ -1542,12 +1577,6 @@ body {
   backdrop-filter: blur(5px); /* Blur background */
 }
 
-.modal .content-div-modal {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-
 .modal .modal-content {
   background-color: #fff; /* White background */
   margin: 15% auto; /* 15% from the top and centered */
@@ -1596,4 +1625,94 @@ body {
   to {
     opacity: 1;
   }
+}
+
+@media (max-width: 1200px) {
+  .contact-heading {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex h2 {
+  font-size: 2em;
+}
+
+.flex .left {
+  float: left;
+  /* background-color: gray; */
+  height: 40rem;
+  width: 50%;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.flex .right {
+  float: right;
+  /* background-color: red; */
+  height: 40rem;
+  width: 50%;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+@media (max-width: 750px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex .left {
+    width: 100%;
+  }
+
+  .flex .right {
+    width: 100%;
+  }
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 5rem; /* Equivalent to 80px (5 * 16px) */
+  height: 5rem; /* Equivalent to 80px */
+  margin-right: 2rem; /* Spacing to the right of the image */
+}
+
+.rounded {
+  border-radius: 50%; /* Creates a circular image */
+  width: 100%; /* Ensures the image fits the container */
+  height: 100%; /* Ensures the image fits the container */
+  object-fit: cover; /* Maintains aspect ratio of the image */
+}
+
+.profile-name {
+  font-size: 2rem; /* Larger font size for name */
+  font-weight: 600; /* Semi-bold text */
+  margin: 0; /* Remove default margin */
+}
+
+.profile-info p {
+  font-size: 1.6rem; /* Increased font size for paragraph */
+  margin: 0.5rem 0 0;
+}
+
+.github-link {
+  color: #3b82f6; /* GitHub link color */
+  transition: color 0.3s; /* Smooth transition for color change */
+  text-decoration: none; /* Remove underline for link */
+}
+
+.github-link:hover {
+  color: #2563eb; /* Darker shade on hover */
+  text-decoration: underline; /* Underline on hover for effect */
 }

@@ -995,7 +995,7 @@ body {
 
 .footer .left .img-web {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .footer .left img {

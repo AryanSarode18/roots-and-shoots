@@ -1,3 +1,7 @@
+/*
+  Copyright 2024 Aryan Sarode & Arnav Nagpurkar
+*/
+
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -664,103 +668,6 @@ body {
 }
 
 /*-----------------------------------*\
-  #DONATE
-\*-----------------------------------*/
-
-.donate-list {
-  display: grid;
-  gap: 60px;
-}
-
-.donate-card {
-  box-shadow: var(--card-shadow);
-}
-
-.donate-card .card-banner {
-  background-color: var(--light-gray);
-}
-
-.donate-card .card-content {
-  background-color: var(--white);
-  padding: 35px;
-}
-
-.progress-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.progress-text {
-  display: flex;
-  gap: 5px;
-  font-size: var(--fs-8);
-}
-
-.progress-text data {
-  color: var(--eerie-black-2);
-  font-weight: var(--fw-600);
-}
-
-.donate-card .card-title {
-  --fs-5: 2.1rem;
-}
-
-.progress-box {
-  background-color: var(--cultured);
-  border-radius: 20px;
-  margin-block: 10px 20px;
-}
-
-.progress {
-  height: 6px;
-  width: 83%;
-  background-color: var(--pistachio);
-  border-radius: inherit;
-}
-
-.progress-value {
-  color: var(--pistachio);
-  font-size: var(--fs-7);
-  font-weight: var(--fw-600);
-}
-
-.card-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 5px;
-  margin-block: 15px;
-}
-
-.donate-card .card-wrapper-text {
-  display: flex;
-  gap: 5px;
-}
-
-.donate-card .card-wrapper-text span {
-  color: var(--sonic-silver);
-  font-weight: var(--fw-500);
-}
-
-.card-wrapper-text data {
-  font-weight: var(--fw-600);
-}
-
-.card-wrapper-text .green {
-  color: var(--pistachio);
-}
-
-.card-wrapper-text .yellow {
-  color: var(--bright-yellow-crayola);
-}
-
-.card-wrapper-text .cyan {
-  color: var(--medium-turquoise);
-}
-
-/*-----------------------------------*\
   #TESTIMONIALS
 \*-----------------------------------*/
 
@@ -987,25 +894,17 @@ body {
   margin: 20px;
 }
 
-.footer .left .left-para {
-  margin-top: 20px;
-  text-wrap: balance;
-}
-
 .footer .left .weblink {
   display: flex;
-  gap: 6px;
 }
 
 .footer .left .img-web {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer .left img {
   display: flex;
-  width: 25rem;
-  height: 5.5rem;
 }
 
 .copyright {
@@ -1140,21 +1039,6 @@ body {
 
   #about_img4 {
     display: none;
-  }
-}
-
-/**
- * responsive for smaller than 850px screen
- */
-
-@media (max-width: 850px) {
-  .footer .left img {
-    width: 18rem !important;
-    height: 4.4rem !important;
-  }
-
-  .footer .left .left-para {
-    margin-top: 0px !important;
   }
 }
 
@@ -1384,28 +1268,6 @@ body {
   .service-list {
     display: flex;
     flex-direction: column;
-  }
-
-  .footer .left .img-web {
-    flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  .footer .left .left-para {
-    margin-top: -1px !important;
-  }
-}
-
-/**
- * responsive for smaller than 1000px screen
- */
-
-@media (max-width: 1000px) {
-  .footer .left img {
-    width: 22rem;
-    height: 5rem;
   }
 }
 
@@ -1704,26 +1566,17 @@ body {
   padding: 2rem 0;
 }
 
-@media (max-width: 590px) {
-  .service .service-list {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-
 @media (max-width: 750px) {
   .flex {
     flex-direction: column;
   }
 
-  .flex .left,
-  .flex .right {
-    width: 95%;
+  .flex .left {
+    width: 100%;
   }
 
-  .footer .flex .img-web img {
-    width: 25rem !important;
-    height: 5.3rem !important;
+  .flex .right {
+    width: 100%;
   }
 }
 
@@ -1766,4 +1619,54 @@ body {
 .github-link:hover {
   color: #2563eb; /* Darker shade on hover */
   text-decoration: underline; /* Underline on hover for effect */
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.open-modal-btn-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.hide {
+  display: none;
+}
+
+.modal-wrapper {
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  width: 400px;
+  max-width: 90%;
+}
+
+.close-btn-wrapper {
+  text-align: right;
+}
+
+.close-modal-btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-modal-btn:hover {
+  color: red;
 }

@@ -1,7 +1,3 @@
-
-
-
-
 'use strict';
 
 
@@ -164,3 +160,59 @@ window.onclick = function(event) {
     enableScroll();
   }
 }
+// Get the modal for plantation
+var modalPlantation = document.getElementById("myModalPlantation");
+
+// Get the new button that opens the plantation modal
+var btnPlantation = document.getElementById("myBtnPlantation");
+
+// Get the <span> element that closes the plantation modal
+var spanPlantation = document.getElementsByClassName("close-plantation")[0];
+
+// When the user clicks on the plantation button, open the modal
+btnPlantation.onclick = function() {
+  modalPlantation.style.display = "block";
+  disableScroll();
+}
+
+// When the user clicks on <span> (x), close the plantation modal
+spanPlantation.onclick = function() {
+  modalPlantation.style.display = "none";
+  enableScroll();
+}
+
+// When the user clicks anywhere outside of the plantation modal, close it
+window.onclick = function(event) {
+  if (event.target == modalPlantation) {
+    modalPlantation.style.display = "none";
+    enableScroll();
+  }
+}
+
+const openBtnProducts = document.getElementById("myBtnProducts");
+const modalProducts = document.getElementById("myModalProducts");
+const closeBtnProducts = document.querySelector(".close-modal-btn");
+
+// Function to open the modal
+function openModal() {
+    modalProducts.classList.remove("hide");
+}
+
+// Function to close the modal
+function closeModal() {
+    modalProducts.classList.add("hide");
+}
+
+// Event listener to open the modal
+openBtnProducts.addEventListener("click", openModal);
+
+// Event listener to close the modal when clicking the close button
+closeBtnProducts.addEventListener("click", closeModal);
+
+// Event listener to close the modal when clicking outside of the modal
+modalProducts.addEventListener("click", function(e) {
+    if (e.target === modalProducts) {
+        closeModal();
+    }
+});
+

@@ -491,7 +491,6 @@ body {
 
 .features-item .item-title {
   margin-block-end: 10px;
-  /* text-wrap: nowrap; */
 }
 
 .features-item .item-text {
@@ -600,6 +599,10 @@ body {
   flex-direction: column;
   justify-content: center;
   font-size: 19px;
+}
+
+#myModalTreeFree li {
+  list-style: disc;
 }
 
 /*-----------------------------------*\
@@ -909,15 +912,18 @@ body {
 
 .footer .left .weblink {
   display: flex;
+  gap: 5px;
 }
 
 .footer .left .img-web {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .footer .left img {
   display: flex;
+  width: 25rem;
+  height: 5.5rem;
 }
 
 .copyright {
@@ -956,21 +962,10 @@ body {
  */
 
 @media (min-width: 450px) {
-  /**
-   * CUSTOM PROPERTY
-   */
 
   :root {
-    /**
-     * typography
-     */
-
     --fs-3: 4rem;
   }
-
-  /**
-   * CTA
-   */
 
   .cta {
     --fs-4: 4.1rem;
@@ -986,21 +981,10 @@ body {
  */
 
 @media (min-width: 580px) {
-  /**
-   * CUSTOM PROPERTY
-   */
 
   :root {
-    /**
-     * typography
-     */
-
     --fs-2: 5.5rem;
   }
-
-  /**
-   * DONATE
-   */
 
   .donate-card {
     position: relative;
@@ -1021,10 +1005,6 @@ body {
     --fs-5: 2.4rem;
   }
 
-  /**
-   * EVENT
-   */
-
   .event-card {
     display: flex;
     align-items: flex-start;
@@ -1039,10 +1019,6 @@ body {
     font-size: var(--fs-5);
     line-height: 1.4;
   }
-
-  /**
-   * INSTA POST
-   */
 
   .insta-post-item {
     min-width: 45%;
@@ -1068,17 +1044,10 @@ body {
  */
 
 @media (min-width: 768px) {
-  /**
-   * FEATURES, SERVICE
-   */
 
   .service-list {
     grid-template-columns: 1fr 1fr;
   }
-
-  /**
-   * ABOUT
-   */
 
   .banner-row {
     display: flex;
@@ -1098,10 +1067,6 @@ body {
     margin-block-end: 30px;
   }
 
-  /**
-   * TESTIMONIALS
-   */
-
   .testi-card {
     display: flex;
     align-items: flex-start;
@@ -1112,17 +1077,9 @@ body {
     margin-block-start: 0;
   }
 
-  /**
-   * INSTA POST
-   */
-
   .insta-post-item {
     min-width: 32%;
   }
-
-  /**
-   * FOOTER
-   */
 
   .footer .container {
     display: flex;
@@ -1157,21 +1114,11 @@ body {
  */
 
 @media (min-width: 992px) {
-  /**
-   * CUSTOM PROPERTY
-   */
 
   :root {
-    /**
-     * typography
-     */
 
     --fs-2: 7.5rem;
   }
-
-  /**
-   * HEADER
-   */
 
   .header {
     transition: var(--transition-2);
@@ -1183,10 +1130,6 @@ body {
     gap: 50px;
   }
 
-  /**
-   * FEATURES
-   */
-
   .features {
     padding-block-start: var(--section-padding);
   }
@@ -1194,10 +1137,6 @@ body {
   .features-list {
     grid-template-columns: repeat(4, 1fr);
   }
-
-  /**
-   * ABOUT
-   */
 
   .banner-col {
     width: 50%;
@@ -1227,10 +1166,6 @@ body {
     margin-block-end: 0;
   }
 
-  /**
-   * CTA
-   */
-
   .cta .container {
     display: grid;
     grid-template-columns: 1fr 0.7fr;
@@ -1245,18 +1180,10 @@ body {
     --fs-4: 5rem;
   }
 
-  /**
-   * DONATE
-   */
-
   .donate-list {
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
   }
-
-  /**
-   * TESTIMONIALS
-   */
 
   .testi {
     display: grid;
@@ -1266,10 +1193,6 @@ body {
   .testi-content {
     padding-inline: 30px 50px;
   }
-
-  /**
-   * EVENT
-   */
 
   .event-card .wrapper {
     display: flex;
@@ -1281,10 +1204,6 @@ body {
   .event-card .card-text {
     margin-block-end: 0;
   }
-
-  /**
-   * INSTA POST
-   */
 
   .insta-post-item {
     min-width: 24%;
@@ -1328,9 +1247,6 @@ body {
  */
 
 @media (min-width: 1225px) {
-  /**
-   * SERVICE
-   */
 
   .service-list {
     grid-template-columns: repeat(4, 1fr);
@@ -1347,21 +1263,11 @@ body {
  */
 
 @media (min-width: 1200px) {
-  /**
-   * CUSTOM PROPERTY
-   */
 
   :root {
-    /**
-     * typography
-     */
 
     --fs-3: 4.4rem;
   }
-
-  /**
-   * REUSED STYLE
-   */
 
   .container {
     max-width: 1400px;
@@ -1373,10 +1279,6 @@ body {
   .section-title {
     line-height: 1.2;
   }
-
-  /**
-   * HEADER
-   */
 
   .nav-open-btn,
   .nav-close-btn,
@@ -1415,18 +1317,10 @@ body {
     color: var(--white-60);
   }
 
-  /**
-   * HERO
-   */
-
   .hero {
     padding-block: 200px 325px;
     background-position: center;
   }
-
-  /**
-   * FEATURES
-   */
 
   .features {
     padding-block-start: 0;
@@ -1434,17 +1328,9 @@ body {
     background-color: transparent;
   }
 
-  /**
-   * ABOUT
-   */
-
   .deco-img {
     left: -35px;
   }
-
-  /**
-   * DONATE
-   */
 
   .donate-card {
     padding-inline-end: 120px;
@@ -1454,18 +1340,12 @@ body {
     width: 65%;
   }
 
-  /*  */
-
   .contact-heading {
     text-align: center;
     font-weight: bold;
     margin-bottom: 30px;
     color: white;
   }
-
-  /**
-   * FOOTER
-   */
 
   .footer .container {
     margin-inline: 30px;
@@ -1479,10 +1359,10 @@ body {
 
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%;
 }
 
 .close {
@@ -1500,56 +1380,56 @@ body {
 }
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1000; /* Sit on top */
+  display: none;
+  position: fixed;
+  z-index: 1000;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
-  backdrop-filter: blur(5px); /* Blur background */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
 }
 
 .modal .modal-content {
-  background-color: #fff; /* White background */
-  margin: 15% auto; /* 15% from the top and centered */
+  background-color: #fff;
+  margin: 15% auto;
   padding: 20px;
-  border: 1px solid #888; /* Gray border */
-  border-radius: 8px; /* Rounded corners */
-  width: 80%; /* Could be more or less depending on screen size */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
-  animation: fadeIn 0.5s; /* Fade-in effect */
+  border: 1px solid #888;
+  border-radius: 8px;
+  width: 80%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.5s;
 }
 
 .modal .close {
-  color: #aaa; /* Gray color */
-  float: right; /* Align to the right */
-  font-size: 28px; /* Font size */
-  font-weight: bold; /* Bold font */
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .modal .close:hover,
 .modal .close:focus {
-  color: black; /* Black color on hover */
-  text-decoration: none; /* No underline */
-  cursor: pointer; /* Pointer cursor */
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .modal h2 {
-  color: #333; /* Dark gray */
+  color: #333;
+  text-align: center;
 }
 
 .modal h3 {
-  color: #5a5a5a; /* Medium gray */
-  margin-top: 20px; /* Space above */
+  color: #5a5a5a;
+  margin-top: 20px;
 }
 
 .modal p {
-  color: #666; /* Lighter gray */
-  line-height: 1.6; /* Better readability */
-  margin-bottom: 15px; /* Space below paragraphs */
+  color: #666;
+  line-height: 1.6;
 }
 
 /* Animation of Modal */
@@ -1578,7 +1458,8 @@ body {
   }
 
   .footer .left .img-web img {
-    width: 21rem;
+    width: 21rem !important;
+    height: auto !important;
   }
 
   .footer .left .img-web {
@@ -1642,38 +1523,38 @@ body {
 }
 
 .profile-image {
-  width: 5rem; /* Equivalent to 80px (5 * 16px) */
-  height: 5rem; /* Equivalent to 80px */
-  margin-right: 2rem; /* Spacing to the right of the image */
+  width: 5rem;
+  height: 5rem;
+  margin-right: 2rem;
 }
 
 .rounded {
-  border-radius: 50%; /* Creates a circular image */
-  width: 100%; /* Ensures the image fits the container */
-  height: 100%; /* Ensures the image fits the container */
-  object-fit: cover; /* Maintains aspect ratio of the image */
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .profile-name {
-  font-size: 2rem; /* Larger font size for name */
-  font-weight: 600; /* Semi-bold text */
-  margin: 0; /* Remove default margin */
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
 }
 
 .profile-info p {
-  font-size: 1.6rem; /* Increased font size for paragraph */
+  font-size: 1.6rem;
   margin: 0.5rem 0 0;
 }
 
 .github-link {
-  color: #3b82f6; /* GitHub link color */
-  transition: color 0.3s; /* Smooth transition for color change */
-  text-decoration: none; /* Remove underline for link */
+  color: #3b82f6;
+  transition: color 0.3s;
+  text-decoration: none;
 }
 
 .github-link:hover {
-  color: #2563eb; /* Darker shade on hover */
-  text-decoration: underline; /* Underline on hover for effect */
+  color: #2563eb;
+  text-decoration: underline;
 }
 
 body {

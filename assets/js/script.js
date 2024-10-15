@@ -160,6 +160,9 @@ window.onclick = function(event) {
     enableScroll();
   }
 }
+
+
+
 // Get the modal for plantation
 var modalPlantation = document.getElementById("myModalPlantation");
 
@@ -189,30 +192,184 @@ window.onclick = function(event) {
   }
 }
 
-const openBtnProducts = document.getElementById("myBtnProducts");
-const modalProducts = document.getElementById("myModalProducts");
-const closeBtnProducts = document.querySelector(".close-modal-btn");
 
-// Function to open the modal
-function openModal() {
-    modalProducts.classList.remove("hide");
+
+
+// Get the modal for tree free
+var modalTreeFree = document.getElementById("myModalTreeFree");
+
+// Get the new button that opens the plantation modal
+var btnTreeFree = document.getElementById("myBtnTreeFree");
+
+// Get the <span> element that closes the plantation modal
+var spantreeFree = document.getElementsByClassName("close-treeFree")[0];
+
+// When the user clicks on the plantation button, open the modal
+btnTreeFree.onclick = function() {
+  modalTreeFree.style.display = "block";
+  disableScroll();
 }
 
-// Function to close the modal
-function closeModal() {
-    modalProducts.classList.add("hide");
+// When the user clicks on <span> (x), close the plantation modal
+spantreeFree.onclick = function() {
+  modalTreeFree.style.display = "none";
+  enableScroll();
 }
 
-// Event listener to open the modal
-openBtnProducts.addEventListener("click", openModal);
+// When the user clicks anywhere outside of the plantation modal, close it
+window.onclick = function(event) {
+  if (event.target == modalTreeFree) {
+    modalTreeFree.style.display = "none";
+    enableScroll();
+  }
+}
 
-// Event listener to close the modal when clicking the close button
-closeBtnProducts.addEventListener("click", closeModal);
 
-// Event listener to close the modal when clicking outside of the modal
-modalProducts.addEventListener("click", function(e) {
-    if (e.target === modalProducts) {
-        closeModal();
-    }
-});
 
+// Get the modal for educate
+var modalEducate = document.getElementById("myModalEducate");
+
+// Get the new button that opens the plantation modal
+var btnEducate = document.getElementById("myBtnEducate");
+
+// Get the <span> element that closes the plantation modal
+var spantreeFree = document.getElementsByClassName("close-educate")[0];
+
+// When the user clicks on the plantation button, open the modal
+btnEducate.onclick = function() {
+  modalEducate.style.display = "block";
+  disableScroll();
+}
+
+// When the user clicks on <span> (x), close the plantation modal
+spantreeFree.onclick = function() {
+  modalEducate.style.display = "none";
+  enableScroll();
+}
+
+// When the user clicks anywhere outside of the plantation modal, close it
+window.onclick = function(event) {
+  if (event.target == modalEducate) {
+    modalEducate.style.display = "none";
+    enableScroll();
+  }
+}
+
+
+
+// Events
+// Get the modal for event1
+var modalEvent1 = document.getElementById("myModalEvent1");
+
+// Get the button that opens the Event 1 modal
+var btnEvent1 = document.getElementById("myBtnEvent1");
+
+// Get the <span> element that closes the Event 1 modal
+var spanEvent1 = document.getElementsByClassName("close-event1")[0];
+
+// When the user clicks on the Event 1 button, open the modal
+btnEvent1.onclick = function() {
+  modalEvent1.style.display = "block";
+  disableScroll();
+}
+
+// When the user clicks on <span> (x), close the Event 1 modal
+spanEvent1.onclick = function() {
+  modalEvent1.style.display = "none";
+  enableScroll();
+}
+
+// When the user clicks anywhere outside of the Event 1 modal, close it
+window.onclick = function(event) {
+  if (event.target == modalEvent1) {
+    modalEvent1.style.display = "none";
+    enableScroll();
+  }
+}
+
+// Get the modal for event2
+var modalEvent2 = document.getElementById("myModalEvent2");
+
+// Get the button that opens the Event 2 modal
+var btnEvent2 = document.getElementById("myBtnEvent2");
+
+// Get the <span> element that closes the Event 2 modal
+var spanEvent2 = document.getElementsByClassName("close-event2")[0];
+
+// When the user clicks on the Event 2 button, open the modal
+btnEvent2.onclick = function() {
+  modalEvent2.style.display = "block";
+  disableScroll();
+}
+
+// When the user clicks on <span> (x), close the Event 2 modal
+spanEvent2.onclick = function() {
+  modalEvent2.style.display = "none";
+  enableScroll();
+}
+
+// When the user clicks anywhere outside of the Event 2 modal, close it
+window.onclick = function(event) {
+  if (event.target == modalEvent2) {
+    modalEvent2.style.display = "none";
+    enableScroll();
+  }
+}
+
+// Get the modal for event3
+var modalEvent3 = document.getElementById("myModalEvent3");
+
+// Get the button that opens the Event 3 modal
+var btnEvent3 = document.getElementById("myBtnEvent3");
+
+// Get the <span> element that closes the Event 3 modal
+var spanEvent3 = document.getElementsByClassName("close-event3")[0];
+
+// When the user clicks on the Event 3 button, open the modal
+btnEvent3.onclick = function() {
+  modalEvent3.style.display = "block";
+  disableScroll();
+}
+
+// When the user clicks on <span> (x), close the Event 3 modal
+spanEvent3.onclick = function() {
+  modalEvent3.style.display = "none";
+  enableScroll();
+}
+
+// When the user clicks anywhere outside of the Event 3 modal, close it
+window.onclick = function(event) {
+  if (event.target == modalEvent3) {
+    modalEvent3.style.display = "none";
+    enableScroll();
+  }
+}
+
+// Get the modal for event4
+var modalEvent4 = document.getElementById("myModalEvent4");
+
+// Get the button that opens the Event 4 modal
+var btnEvent4 = document.getElementById("myBtnEvent4");
+
+// Get the <span> element that closes the Event 4 modal
+var spanEvent4 = document.getElementsByClassName("close-event4")[0];
+
+// When the user clicks on the Event 4 button, open the modal
+btnEvent4.onclick = function() {
+  modalEvent4.style.display = "block";
+  disableScroll();
+}
+
+// When the user clicks on <span> (x), close the Event 4 modal
+spanEvent4.onclick = function() {
+  modalEvent4.style.display = "none";
+  enableScroll();
+}
+
+// When the user clicks anywhere outside of the Event 4 modal, close it
+window.onclick = function(event) {
+  if (event.target == modalEvent4) {
+    modalEvent4.style.display = "none";
+    enableScroll();
+  }
+}

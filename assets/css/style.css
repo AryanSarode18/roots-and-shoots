@@ -602,7 +602,7 @@ body {
 }
 
 #myModalTreeFree li {
-  list-style: disc;
+  text-align: center;
 }
 
 /*-----------------------------------*\
@@ -962,7 +962,6 @@ body {
  */
 
 @media (min-width: 450px) {
-
   :root {
     --fs-3: 4rem;
   }
@@ -981,7 +980,6 @@ body {
  */
 
 @media (min-width: 580px) {
-
   :root {
     --fs-2: 5.5rem;
   }
@@ -1044,7 +1042,6 @@ body {
  */
 
 @media (min-width: 768px) {
-
   .service-list {
     grid-template-columns: 1fr 1fr;
   }
@@ -1114,9 +1111,7 @@ body {
  */
 
 @media (min-width: 992px) {
-
   :root {
-
     --fs-2: 7.5rem;
   }
 
@@ -1247,7 +1242,6 @@ body {
  */
 
 @media (min-width: 1225px) {
-
   .service-list {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -1263,9 +1257,7 @@ body {
  */
 
 @media (min-width: 1200px) {
-
   :root {
-
     --fs-3: 4.4rem;
   }
 
@@ -1505,12 +1497,12 @@ body {
     flex-direction: row;
   }
 
-  .flex .left{
+  .flex .left {
     float: left;
     width: 49%;
   }
 
-  .flex .right{
+  .flex .right {
     float: right;
     width: 49%;
   }
@@ -1605,4 +1597,12 @@ body {
 
 .close-modal-btn:hover {
   color: red;
+}
+
+
+.content-div-modal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }

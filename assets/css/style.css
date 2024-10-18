@@ -608,7 +608,6 @@ body {
   margin: 0 7em;
 }
 
-
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
@@ -815,53 +814,8 @@ body {
   margin-inline: auto;
 }
 
-/*-----------------------------------*\
-  #INSTA POST
-\*-----------------------------------*/
-
-.insta-post-link {
-  position: relative;
-  background-color: var(--eerie-black-1);
-  overflow: hidden;
-}
-
-.insta-post-link > img {
-  transition: var(--transition-2);
-}
-
-.insta-post-link:is(:hover, :focus) > img {
-  transform: scale(1.1);
-  opacity: 0.5;
-}
-
-.insta-post-link > ion-icon {
-  color: var(--white);
-  font-size: 5rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: var(--transition-2);
-}
-
-.insta-post-link:is(:hover, :focus) > ion-icon {
-  opacity: 1;
-}
-
-.insta-post-list {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: inline mandatory;
-}
-
-.insta-post-list::-webkit-scrollbar {
-  display: none;
-}
-
-.insta-post-item {
-  min-width: 90%;
-  scroll-snap-align: center;
+#img-tree-plantation {
+  width: 80%;
 }
 
 /*-----------------------------------*\
@@ -881,8 +835,7 @@ body {
   padding: 20px;
 }
 
-.footer-list,
-.copyright {
+.footer-list {
   max-width: max-content;
   margin-inline: auto;
 }
@@ -895,18 +848,13 @@ body {
   margin-block-end: 15px;
 }
 
-.footer-link,
-.copyright-link {
+.footer-link {
   text-decoration: underline;
   transition: var(--transition-1);
 }
 
 .footer-link {
   color: var(--white_50);
-}
-
-:is(.footer-link, .copyright-link):is(:hover, :focus) {
-  background-color: hsla(0, 0%, 100%, 0.05);
 }
 
 .footer .left {
@@ -928,15 +876,6 @@ body {
   display: flex;
   width: 25rem;
   height: 5.5rem;
-}
-
-.copyright {
-  text-align: center;
-}
-
-.copyright-link {
-  display: inline-block;
-  text-decoration: none;
 }
 
 /*-----------------------------------*\
@@ -988,25 +927,6 @@ body {
     --fs-2: 5.5rem;
   }
 
-  .donate-card {
-    position: relative;
-    padding-block-end: 150px;
-    box-shadow: none;
-  }
-
-  .donate-card .card-content {
-    position: absolute;
-    width: 85%;
-    bottom: 0;
-    right: 0;
-    border-radius: 4px;
-    box-shadow: var(--card-shadow);
-  }
-
-  .donate-card .card-title {
-    --fs-5: 2.4rem;
-  }
-
   .event-card {
     display: flex;
     align-items: flex-start;
@@ -1020,10 +940,6 @@ body {
   .event-card .card-title {
     font-size: var(--fs-5);
     line-height: 1.4;
-  }
-
-  .insta-post-item {
-    min-width: 45%;
   }
 }
 
@@ -1078,10 +994,6 @@ body {
     margin-block-start: 0;
   }
 
-  .insta-post-item {
-    min-width: 32%;
-  }
-
   .footer .container {
     display: flex;
     align-items: center;
@@ -1090,8 +1002,7 @@ body {
     padding-inline: 40px;
   }
 
-  .footer-list,
-  .copyright {
+  .footer-list {
     margin-inline: 0;
   }
 
@@ -1179,11 +1090,6 @@ body {
     --fs-4: 5rem;
   }
 
-  .donate-list {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
-  }
-
   .testi {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1202,10 +1108,6 @@ body {
 
   .event-card .card-text {
     margin-block-end: 0;
-  }
-
-  .insta-post-item {
-    min-width: 24%;
   }
 }
 
@@ -1326,14 +1228,6 @@ body {
 
   .deco-img {
     left: -35px;
-  }
-
-  .donate-card {
-    padding-inline-end: 120px;
-  }
-
-  .donate-card .card-content {
-    width: 65%;
   }
 
   .contact-heading {
@@ -1602,7 +1496,6 @@ body {
 .close-modal-btn:hover {
   color: red;
 }
-
 
 .content-div-modal {
   display: flex;

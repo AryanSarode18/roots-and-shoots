@@ -814,9 +814,6 @@ body {
   margin-inline: auto;
 }
 
-#img-tree-plantation {
-  width: 80%;
-}
 
 /*-----------------------------------*\
   #FOOTER
@@ -1333,9 +1330,6 @@ body {
 }
 
 @media (max-width: 1100px) {
-  #img-tree-plantation {
-    width: 30rem !important;
-  }
 
   #tree-plantation-div {
     gap: 20px !important;

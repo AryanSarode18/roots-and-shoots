@@ -601,9 +601,13 @@ body {
   font-size: 19px;
 }
 
-#myModalTreeFree li {
-  text-align: center;
+#myModalTreeFree ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 7em;
 }
+
 
 /*-----------------------------------*\
   #SERVICE

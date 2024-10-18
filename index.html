@@ -1,1 +1,955 @@
+<!-- Copyright 2024 Aryan Sarode & Arnav Nagpurkar -->
 
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeafShade</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?fmily=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+      <h1>
+        <a href="#" class="logo">LeafShade</a>
+      </h1>
+
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">LeafShade</a>
+
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>
+              <span>Home</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>
+              <span>Importance</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>
+              <span>Conservation</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#event" class="navbar-link" data-nav-link>
+              <span>Events</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-action">
+        <a href="#contact" class="navbar-link" data-nav-link>
+          <button class="btn btn-primary">
+            <span>About the Project</span>
+          </button>
+      </div>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <article></article>
+    <!-- 
+        - #HERO
+      -->
+
+    <section class="hero" id="home">
+      <div class="container">
+        <p class="section-subtitle">
+          <img src="./assets/images/subtitle-img-white.png" width="32" height="7" alt="Wavy line" />
+
+          <span>Welcome to LeafShade</span>
+        </p>
+
+        <h2 class="h1 hero-title">
+          <strong>Nurture</strong> the <strong>Nature</strong>
+        </h2>
+
+        <p class="hero-text">
+          Trees are the lungs of our planet, providing us with the vital oxygen we need to live. They not only offer
+          shade and beauty but also play a crucial role in combating climate change and supporting biodiversity. As we
+          plant, protect, and celebrate trees, we foster healthier communities and richer ecosystems. Together, let us
+          strive to cherish and nurture our natural world for future generations.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- 
+        - #FEATURES
+      -->
+
+    <section class="section features">
+      <div class="container">
+        <ul class="features-list">
+          <li class="features-item">
+            <div class="item-icon">
+              <ion-icon name="cloud-outline"></ion-icon>
+            </div>
+            <div>
+              <h3 class="h4 item-title">Climate Guardians</h3>
+            </div>
+          </li>
+
+          <li class="features-item">
+            <div class="item-icon">
+              <ion-icon name="water-outline"></ion-icon>
+            </div>
+            <div>
+              <h3 class="h4 item-title">Biodiversity Boosters</h3>
+            </div>
+          </li>
+
+          <li class="features-item">
+            <div class="item-icon">
+              <ion-icon name="snow-outline"></ion-icon>
+            </div>
+
+            <div>
+              <h3 class="h4 item-title">Cooling Agents</h3>
+            </div>
+          </li>
+
+          <li class="features-item">
+            <div class="item-icon">
+              <ion-icon name="leaf-outline"></ion-icon>
+            </div>
+            <div>
+              <h3 class="h4 item-title">Beauty Enhancer</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 
+        - #ABOUT
+      -->
+
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about-banner">
+          <img src="./assets/images/deco-img.png" width="58" height="261" alt="decoration-design" class="deco-img" />
+
+          <div class="banner-row">
+            <div class="banner-col">
+              <img src="./assets/images/about-banner-1.jpg" width="315" height="380" loading="lazy" alt="tree1"
+                class="about-img w-100" />
+
+              <img src="./assets/images/about-banner-2.jpg" width="386" height="250" loading="lazy" alt="tree2"
+                class="about-img about-img-2 w-100" />
+            </div>
+
+            <div class="banner-col">
+              <img src="./assets/images/about-banner-3.jpg" width="250" height="277" loading="lazy" alt="tree3"
+                class="about-img about-img-3 w-100" />
+
+              <img src="./assets/images/about-banner-4.jpg" width="315" height="380" loading="lazy" alt="tree4"
+                class="about-img w-100" id="about_img4" />
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+
+
+          <h2 class="h2 section-title">
+            Rise Your Hand to <strong>Preserve Trees</strong>
+          </h2>
+
+          <ul class="tab-nav">
+            <li>
+              <button class="tab-btn active">Why</button>
+            </li>
+            <li>
+              <button class="tab-btn">How</button>
+            </li>
+            <li>
+              <button class="tab-btn">Impact</button>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <p class="section-text">
+              <!-- Content is derived from JS -->
+            </p>
+
+            <ul class="tab-list">
+              <li class="tab-item">
+                <div class="item-icon">
+                  <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <p class="tab-text"></p>
+              </li>
+
+              <li class="tab-item">
+                <div class="item-icon">
+                  <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <p class="tab-text"></p>
+              </li>
+
+              <li class="tab-item">
+                <div class="item-icon">
+                  <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <p class="tab-text"></p>
+              </li>
+
+              <li class="tab-item">
+                <div class="item-icon">
+                  <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <p class="tab-text"></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 
+        - #SERVICE
+      -->
+
+    <section class="section service" id="service" style="background-image: url('./assets/images/service-map.png')">
+      <div class="container">
+
+        <h2 class="h2 section-title">
+          How Should We Work Differently to <strong>keep The Trees Safe</strong>
+        </h2>
+
+        <ul class="service-list">
+          <li>
+            <div class="service-card">
+              <div class="card-icon">
+                <ion-icon name="leaf-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3 card-title">Save Nature</h3>
+
+
+
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2>How to Help Save Trees</h2>
+
+                  <div>
+                    <div class="content-div-modal">
+                      <div>
+                        <h3>Use Eco-Friendly Products</h3>
+                        <p>
+                          <light>Adopting sustainable purchasing practices is essential in reducing demand for products
+                            that
+                            contribute to tree loss.</light>
+                          Consumers can choose eco-friendly and sustainably sourced items to minimize their impact on
+                          forests.
+                          By selecting products with minimal packaging or made from recycled materials, individuals can
+                          help
+                          decrease the pressure on forested lands.
+                          Additionally, supporting companies that prioritize sustainable practices encourages the market
+                          to
+                          shift toward environmentally responsible options.
+                        </p>
+                      </div>
+                      <div></div>
+                    </div>
+
+                    <div class="content-div-modal">
+                      <div>
+                        <h3>Use Reusable Alternatives</h3>
+                        <p>
+                          Switching to reusable products is one of the most impactful ways to save trees.
+                          By opting for cloth napkins, reusable shopping bags, and metal straws instead of their
+                          disposable
+                          counterparts, individuals can significantly reduce their paper and plastic waste.
+                          This shift not only minimizes the demand for new paper products but also contributes to a more
+                          sustainable lifestyle.
+                          By reducing reliance on single-use items, we can help protect forests and conserve resources.
+                        </p>
+                      </div>
+                      <div></div>
+                    </div>
+
+                    <div class="content-div-modal">
+                      <div>
+                        <h3>Go Paperless</h3>
+                        <p>
+                          Going paperless is an effective method to save trees and reduce waste.
+                          By opting for digital billing, e-tickets, and electronic communication, individuals can
+                          eliminate
+                          the need for paper in their daily transactions.
+                          This simple change can lead to significant reductions in paper consumption over time,
+                          protecting
+                          forests from being cut down for paper products.
+                        </p>
+                      </div>
+                      <div></div>
+                    </div>
+
+                    <div class="content-div-modal">
+                      <div>
+                        <h3>Support Sustainable Practices</h3>
+                        <p>
+                          Choosing products with certifications such as Rainforest Alliance can contribute to tree
+                          conservation.
+                          These certifications indicate that the products were sourced in an environmentally friendly
+                          manner,
+                          supporting sustainable forestry practices and protecting ecosystems.
+                          By buying certified products, consumers can ensure they are contributing to the health of
+                          forests
+                          and supporting responsible resource management.
+                        </p>
+                      </div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <p class="card-text">
+                To secure a future where nature thrives, we must adopt sustainable practices and promote meaningful
+                conservation efforts.
+              </p>
+
+
+              <a style="cursor: pointer" class="btn-link" id="myBtn">
+                <span>Read More</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+              <div class="card-icon">
+                <ion-icon name="flower-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3 card-title">Tree Plantation</h3>
+
+              <!-- The Modal -->
+              <div id="myModalPlantation" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close close-plantation">&times;</span>
+                  <h2>Tree Plantation</h2>
+
+                  <div id="tree-plantation-div">
+                    <div class="content-div-modal" id="tree-plantation-p1">
+                      <p>
+                        Tree plantation is very necessary because trees provide oxygen to the environment and make the
+                        air quality better. If more trees are planted, then the world's environment will become a safer
+                        place to live in. Tree plantation also reduces pollution, making this world a safe and secure
+                        place for the future generations.
+                      </p>
+
+                      <br>
+
+                      <p>
+                        Even at S. B. Patil Public School, we have conducted many tree plantation events to engage
+                        students and the community in protecting the environment. These initiatives have enhanced our
+                        campus and has promoted awareness about the importance of trees.
+                      </p>
+                      <div></div>
+                    </div>
+
+                    <div class="content-div-modal" id="tree-plantation-img-div">
+                      <img src="./assets/images/tree-plantation img.jpg" alt="tree plantation in sbpps" width="450px"
+                        id="img-tree-plantation" </div>
+                      <div></div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <p class="card-text">
+                Planting trees in is an effective and common way to contribute to biodiversity and enhance environmental
+                health.
+              </p>
+
+              <a style="cursor: pointer" class="btn-link" id="myBtnPlantation">
+                Read More
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+              <div class="card-icon">
+                <ion-icon name="earth-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3 card-title">Tree Free Products</h3>
+
+              <!-- The Modal -->
+              <div id="myModalTreeFree" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close close-treeFree">&times;</span>
+                  <h2>Tree Free Products</h2>
+
+                  <div id="tree-plantation-div">
+                    <div class="content-div-modal" id="tree-plantation-p1">
+                      <h3>What are Tree-Free Products?</h3>
+                      <p>
+                        Tree-free products are made from materials other than wood, such as -
+                      <ul>
+                        <li>Bamboo</li>
+                        <li>Recycled Textiles</li>
+                        <li>Agricultural Residues</li>
+                        <li>Industry Waste</li>
+                      </ul>
+                      </p>
+
+                      <h3>Why should we use Tree-Free Products?</h3>
+                      <ul>
+                        <li>
+                          <strong>Environmental Benefits</strong> Reduces deforestation and lowers carbon footprint by using materials
+                          like bamboo and agricultural waste.
+                        </li>
+                        <li>
+                          <strong> Conservation of Natural Resources</strong> Saves water and energy; minimizes waste during production.
+                        </li>
+                        <li>
+                          <strong> Health and Safety</strong> Free from harmful chemicals, making them safer for home and office use.
+                        </li>
+                        <li>
+                          <strong> Cost-Effectiveness</strong> Offers affordable pricing and long-term savings.
+                        </li>
+                      </ul>
+
+                      <h3>Which are some of the Tree-Free Products?</h3>
+                      <ul>
+                        <li>
+                          <strong>Newspapers</strong> Switching to digital and online news saves paper by reducing the need for physical newspapers. This means fewer trees are cut down, less energy and water are used in production
+                        </li>
+                        <li>
+                          <strong>Reusable bags</strong> They reduce the need for single-use plastic bags. They save resources and energy that would otherwise go into producing disposable bags.
+                        </li>
+                        <li>
+                          <strong>Reusable Bottles</strong> It helps reduce the volume of single-use plastic that ends up polluting our oceans and landfills. These bottles are often made from durable materials, reducing the need to constantly manufacture new containers.
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="content-div-modal" id="tree-plantation-img-div">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <p class="card-text">
+                Using tree free products made from materials like bamboo, hemp or agricultural waste helps saving trees
+                and reduce environmental impact.
+              </p>
+
+              <a style="cursor: pointer" class="btn-link" id="myBtnTreeFree">
+                Read More
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+              <div class="card-icon">
+                <ion-icon name="school-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3 card-title">Educate & Advocate</h3>
+
+              <!-- The Modal -->
+              <div id="myModalEducate" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close close-educate">&times;</span>
+                  <h2>Educate and advocate</h2>
+
+                  <div id="tree-plantation-div">
+
+                    <div class="content-div-modal" id="tree-plantation-img-div">
+                      <img src="./assets/images/EducateAdvocate/Scanned_20240909-1829.jpg" alt="tree plantation in sbpps" width="450px"
+                        id="img-tree-plantation" </div>
+                      <div></div>
+                      <img src="./assets/images/EducateAdvocate/Scanned_20240909-1830.jpg" alt="tree plantation in sbpps" width="450px"
+                        id="img-tree-plantation" </div>
+                      <div></div>
+                      <img src="./assets/images/EducateAdvocate/Scanned_20240909-1831.jpg" alt="tree plantation in sbpps" width="450px"
+                        id="img-tree-plantation" </div>
+                      <div></div>
+                      <img src="./assets/images/EducateAdvocate/Scanned_20240909-1648-01.jpg" alt="tree plantation in sbpps" width="450px"
+                        id="img-tree-plantation" </div>
+                      <div></div>
+                      <img src="./assets/images/EducateAdvocate/Scanned_20240909-1648-02.jpg" alt="tree plantation in sbpps" width="450px"
+                        id="img-tree-plantation" </div>
+                      <div></div>
+                      <img src="./assets/images/EducateAdvocate/Scanned_20240909-1648-04.jpg" alt="tree plantation in sbpps" width="450px"
+                        id="img-tree-plantation" </div>
+                      <div></div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <p class="card-text">
+                It helps people understand the value of trees and nature and encourages actions to protect them, which
+                can reduce deforestation.
+              </p>
+
+              <a style="cursor: pointer" class="btn-link" id="myBtnEducate">
+                View Images
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- 
+        - #TESTIMONIALS
+      -->
+
+    <section class="testi">
+      <div class="testi-content">
+
+        <div class="testi-card">
+
+          <div>
+            <blockquote class="testi-text">
+              <strong class="quote">“</strong>
+
+              <span class="quotetext">
+                Trees are earth's endless effort to speak to the listening heaven
+              </span>
+            </blockquote>
+            <h3 class="testi-name">Rabindranath Tagore</h3>
+          </div>
+        </div>
+      </div>
+
+      <figure class="testi-banner">
+        <img src="./assets/images/testi-banner.jpg" width="960" height="846" loading="lazy" alt="trees pic"
+          class="img-cover" />
+      </figure>
+    </section>
+
+    <!-- 
+        - #EVENT
+      -->
+
+    <section class="section event" id="event">
+      <div class="container">
+        <p class="section-subtitle">
+          <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="decoration-design" />
+
+          <span>Events & Programs</span>
+
+          <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="decoration-design" />
+        </p>
+
+        <h2 class="h2 section-title">
+          Events and Programs held in <strong>SBPPS</strong>
+        </h2>
+
+        <ul class="event-list">
+          <li>
+            <div class="event-card">
+
+              <div class="wrapper">
+                <div class="card-content">
+                  <p class="card-subtitle">Event 1</p>
+
+                  <h3 class="card-title">
+                    Eco-brick making
+                  </h3>
+
+                  <!-- The Modal -->
+                  <div id="myModalEvent1" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close close-event1">&times;</span>
+                      <h2>Eco-Brick making in SBPPS</h2>
+
+                      <div id="tree-plantation-div">
+
+                        <div style="display: flex; gap: 10px;" class="content-div-modal" id="tree-plantation-img-div">
+                          <img src="./assets/images/eco brick/IMG-20240908-WA0005.jpg" alt="tree plantation in sbpps"
+                            width="450px" id="img-tree-plantation" </div>
+                          <div></div>
+                          <img src="./assets/images/eco brick/IMG-20240908-WA0006.jpg" alt="tree plantation in sbpps"
+                            width="450px" id="img-tree-plantation" </div>
+                          <div></div>
+                          <img src="./assets/images/eco brick/IMG-20240908-WA0008.jpg" alt="tree plantation in sbpps"
+                            width="450px" id="img-tree-plantation" </div>
+                          <div></div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="card-text">
+                    By containing plastics within a plastic bottle, ecobricks are designed to reduce the amount of
+                    plastic exposed to the elements and thus reduce the harmful effects of plastic degradation
+                  </p>
+                </div>
+
+                <a style="cursor: pointer;" class="btn btn-white" id="myBtnEvent1">
+                  <span>View Event</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="event-card">
+
+              <div class="wrapper">
+                <div class="card-content">
+                  <p class="card-subtitle">Event 2</p>
+
+                  <h3 class="card-title">
+                    Bioenzymes
+                  </h3>
+
+                  <!-- The Modal -->
+                  <div id="myModalEvent2" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close close-event2">&times;</span>
+                      <h2>Bioenzymes making in SBPPS</h2>
+
+                      <div id="tree-plantation-div">
+
+                        <div style="display: flex; gap: 10px;" class="content-div-modal" id="tree-plantation-img-div">
+                          <img src="./assets/images/Bioenzyme/IMG-20240908-WA0002.jpg" alt="tree plantation in sbpps"
+                            width="450px" id="img-tree-plantation" </div>
+                          <div></div>
+                          <img src="./assets/images/Bioenzyme/IMG-20240908-WA0001.jpg" alt="tree plantation in sbpps"
+                            width="450px" id="img-tree-plantation" </div>
+                          <div></div>
+                          <img src="./assets/images/Bioenzyme/IMG-20240908-WA0003.jpg" alt="tree plantation in sbpps"
+                            width="450px" id="img-tree-plantation" </div>
+                          <div></div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="card-text">
+                    Bio-enzyme can be used to wash bathrooms, clean toilet bowls, to remove salt scales on bathroom
+                    fittings, to wipe floors, tiles, glass, mirrors, to whiten the laundry, to clean kitchen grease, to
+                    clean hobs & chimney, to clean the vessels and as a fertilizer for plants.
+                  </p>
+                </div>
+
+                <a style="cursor: pointer;" class="btn btn-white" id="myBtnEvent2">
+                  <span>View Event</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="event-card">
+              <div class="wrapper">
+                <div class="card-content">
+                  <p class="card-subtitle">Event 3</p>
+
+                  <h3 class="card-title">
+                    Rally of Abhiyan
+                  </h3>
+
+                  <!-- The Modal -->
+                  <div id="myModalEvent3" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close close-event3">&times;</span>
+                      <h2>Rally of Abhyian</h2>
+
+                      <div id="tree-plantation-div" style="display: flex; gap: 10px; flex-direction: column;">
+
+                        <div style="display: flex; gap: 10px;" class="content-div-modal" id="tree-plantation-img-div">
+                          <img src="./assets/images/rally/IMG-20240927-WA0004.jpg" alt="tree plantation in sbpps"
+                            width="450px" id="img-tree-plantation" </div>
+                          <div></div>
+                          <img src="./assets/images/rally/IMG-20240927-WA0005.jpg" alt="tree plantation in sbpps"
+                            width="450px" id="img-tree-plantation" </div>
+                          <div></div>
+                          <img src="./assets/images/rally/IMG-20240927-WA0006.jpg" alt="tree plantation in sbpps"
+                            width="450px" id="img-tree-plantation" </div>
+                          <div></div>
+
+                            <img src="./assets/images/rally/IMG-20240927-WA0007.jpg" alt="tree plantation in sbpps"
+                            width="450px" id="img-tree-plantation" </div>
+                            <div></div>
+                            <img src="./assets/images/rally/IMG-20240927-WA0008.jpg" alt="tree plantation in sbpps"
+                            width="450px" id="img-tree-plantation" </div>
+                            <div></div>
+                            <img src="./assets/images/rally/IMG-20240927-WA0009.jpg" alt="tree plantation in sbpps"
+                            width="450px" id="img-tree-plantation" </div>
+                            <div></div>
+                            
+                          </div>
+                          <div class="content-div-modal" style="display: flex; gap: 10px;">
+
+                          
+                          <div style="display: flex; gap: 10px;" class="content-div-modal" id="tree-plantation-img-div">
+                            <video src="./assets/images/rally/VID-20240927-WA0013.mp4" alt="tree plantation in sbpps" controls
+                            width="450px" id="img-tree-plantation" </div>
+                            <div></div>
+                            
+                          </div>
+                          <div style="display: flex; gap: 10px;" class="content-div-modal" id="tree-plantation-img-div">
+                            <video src="./assets/images/rally/VID-20240927-WA0014.mp4" alt="tree plantation in sbpps" controls
+                            width="450px" id="img-tree-plantation" </div>
+                            <div></div>
+                            
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="card-text">
+                    SBPPS conducted a rally in which we spread information about the importance of trees and the need
+                    for their conservation.
+                  </p>
+                </div>
+
+                <a style="cursor: pointer;" class="btn btn-white" id="myBtnEvent3">
+                  <span>View Event</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="event-card">
+
+              <div class="wrapper">
+                <div class="card-content">
+                  <p class="card-subtitle">Event 4</p>
+
+                  <h3 class="card-title">
+                    Tree Plantation
+                  </h3>
+
+                  <!-- The Modal -->
+                  <div id="myModalEvent4" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close close-event4">&times;</span>
+                      <h2>Tree Plantation in SBPPS</h2>
+
+                      <div id="tree-plantation-div">
+
+                        <div class="content-div-modal" id="tree-plantation-img-div">
+                          <img src="./assets/images/tree/1.jpg" alt="tree plantation in sbpps"  id="img-tree-plantation">
+                          <img src="./assets/images/tree/3.jpg" alt="tree plantation in sbpps"  id="img3-tree-plantation">
+                          <img src="./assets/images/tree/2.jpg" alt="tree plantation in sbpps" width="45%" id="img2-tree-plantation">
+                          <img src="./assets/images/tree/4.jpg" alt="tree plantation in sbpps" width="45%" id="img4-tree-plantation"
+                          </div>
+                          <div></div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="card-text">
+                    Tree Plantation drives combat many environmental issues like deforestation, erosion of soil, desertification in semi-arid areas, global warming and hence enhancing the beauty and balance of the environment. Trees absorb harmful gases and emit oxygen resulting in an increase in oxygen supply.
+                  </p>
+                </div>
+
+                <a style="cursor: pointer;" class="btn btn-white" id="myBtnEvent4">
+                  <span>View Event</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- 
+        - Contact
+      -->
+
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <section class="about-project">
+
+      <h2 class="h2 section-title contact-heading" id="contact">
+        About the Project
+      </h2>
+
+
+      <div class="flex">
+        <div class="left">
+          <h2 style="margin-bottom: 30px;">
+            About Roots and Shoots
+          </h2>
+          <div class="img-web">
+            <img src="https://rootsandshoots.in/assets/footerLogo2.png" alt="roots and shoots logo 1">
+            <img src="https://rootsandshoots.in/assets/footerLogo1.png" alt="roots and shoots logo 2">
+          </div>
+          <br>
+          <p style="margin-top: 20px;">Jane Goodall's Roots & Shoots - India is a community of compassionate individuals
+            who stand together for the betterment of our people, animals, and environment.</p>
+          <br>
+          <div class="weblink" style="justify-content: center;">
+            <p>Website link - </p>
+            <a target="_blank" href="https://rootsandshoots.in/"> https://rootsandshoots.in/</a>
+          </div>
+        </div>
+
+        <div class="right">
+          <h2>
+            About Developers
+          </h2>
+
+          <div style="margin: 1.3em 0;"></div>
+
+          <div class="user-profile">
+            <div class="profile-image">
+              <img src="https://avatars.githubusercontent.com/u/117713349?v=4" alt="arnav" width={80} height={80}
+                class="rounded" />
+            </div>
+            <div class="profile-info">
+              <span class="profile-name">Aryan Sarode</span>
+              <p>
+                GitHub Profile:&nbsp;
+                <a href="https://github.com/aryansarode18" class="github-link" target="_blank" style="color: white;">
+                  aryansarode18
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div style="margin: 3em 0;"></div>
+          <div class="user-profile">
+            <div class="profile-image">
+              <img src="https://avatars.githubusercontent.com/u/84492896?v=4" alt="arnav" class="rounded" />
+            </div>
+            <div class="profile-info">
+              <span class="profile-name">Arnav Nagpurkar</span>
+              <p>
+                GitHub Profile:&nbsp;
+              <div style="display: flex;">
+                <a href="https://github.com/arnavnagpurkar" class="github-link" target="_blank" style="color: white;">
+                  arnavnagpurkar
+                </a> , &nbsp; <a href="https://github.com/linux-07" class="github-link" target="_blank"
+                  style="color: white;">
+                  linux-07
+                </a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+  </footer>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

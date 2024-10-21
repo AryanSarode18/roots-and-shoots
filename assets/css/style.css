@@ -605,7 +605,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 7em;
+  margin: 0 6rem;
 }
 
 /*-----------------------------------*\
@@ -814,6 +814,9 @@ body {
   margin-inline: auto;
 }
 
+#tree-plantation-about-div {
+  width: 80%;
+}
 
 /*-----------------------------------*\
   #FOOTER
@@ -885,6 +888,16 @@ body {
     align-items: center;
     gap: 13px;
   }
+
+  #myModalTreeFree ul {
+    margin: 0 4rem !important;
+  }
+}
+
+@media (max-width: 360px) {
+  #tree-plantation-about {
+    width: 25rem !important;
+  }
 }
 
 /**
@@ -894,6 +907,16 @@ body {
 @media (max-width: 385px) {
   .hero-title {
     display: block !important;
+  }
+
+  #myModalTreeFree ul {
+    margin: 0 0.5rem !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .modal .modal-content {
+    width: 90% !important;
   }
 }
 
@@ -1330,6 +1353,9 @@ body {
 }
 
 @media (max-width: 1100px) {
+  #tree-plantation-about {
+    width: 30rem;
+  }
 
   #tree-plantation-div {
     gap: 20px !important;
@@ -1348,6 +1374,51 @@ body {
 
   .footer .left .img-web {
     justify-content: space-evenly;
+  }
+}
+
+.educate-img {
+  width: 100%;
+}
+
+.eco-img1 {
+  width: 65% !important;
+}
+
+.eco-pics-div2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.tree-pl-event {
+  width: 100%;
+}
+
+.tree-pl-2div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+@media (max-width: 550px) {
+  .eco-pics-div2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .eco-img1 {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .rally-img {
+    width: 100% !important;
+  }
+
+  .tree-pl-2div {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -1496,4 +1567,11 @@ body {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
+}
+
+.educate-modal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-items: center;
 }
